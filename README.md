@@ -1,0 +1,2 @@
+# hw12
+SELinux
