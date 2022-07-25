@@ -23,7 +23,7 @@ SELinux
 *README с анализом причины неработоспособности, возможными способами решения и обоснованием выбора одного из них;
 *исправленный стенд или демонстрация работоспособной системы скриншотами и описанием.
 
-* Нахожу время когда система ругалась на порт 4881 *
+* Нахожу время когда система ругалась на порт 4881*
 ```
 type=AVC msg=audit(1658487548.945:858): avc:  denied  { name_bind } for  pid=2987 comm="nginx" src=4881 scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:unreserved_port_t:s0 tclass=tcp_socket permissive=0
 ```
