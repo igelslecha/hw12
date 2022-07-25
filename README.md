@@ -28,9 +28,8 @@ SELinux
 ```
 type=AVC msg=audit(1658487548.945:858): avc:  denied  { name_bind } for  pid=2987 comm="nginx" src=4881 scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:unreserved_port_t:s0 tclass=tcp_socket permissive=0
 ```
-* Натравливаю audit2why на стоку с меткой 1658487548.945:858*
-* И получаю ошибку потому как не установил соотвествующий пакет*
-* Устанавливаю *
+*Натравливаю audit2why на стоку с меткой 1658487548.945:858b и получаю ошибку потому как не установил соотвествующий пакет*
+*Устанавливаю*
 ```
 [root@selinux ~]# yum install policycoreutils-python
 Failed to set locale, defaulting to C
