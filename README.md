@@ -134,7 +134,7 @@ Complete!
 
 
 ```
-* Натравливаю опять *
+*Натравливаю опять*
 ```
 [root@selinux ~]# grep 1658487548.945:858 /var/log/audit/audit.log | audit2why
 type=AVC msg=audit(1658487548.945:858): avc:  denied  { name_bind } for  pid=2987 comm="nginx" src=4881 scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:unreserved_port_t:s0 tclass=tcp_socket permissive=0
