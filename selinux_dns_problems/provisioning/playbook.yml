@@ -104,6 +104,9 @@
       state: restarted
       enabled: yes
 
+  - name: fix rights under SELinux
+    ansible.builtin.command: chcon -R -t named_zone_t /etc/named
+
 - hosts: client # first client provision
   become: true
   tasks:
