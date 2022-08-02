@@ -522,3 +522,8 @@ restorecon reset /etc/named/dynamic/named.ddns.lab.view1.jnl context system_u:ob
 restorecon reset /etc/named/named.newdns.lab context system_u:object_r:named_zone_t:s0->system_u:object_r:etc_t:s0
 restorecon reset /etc/named/named.50.168.192.rev context system_u:object_r:named_zone_t:s0->system_u:object_r:etc_t:s0
 ```
+**Представлен исправленный стенд, где в плейбук включена команда исправления**
+```
+  - name: fix rights under SELinux
+    ansible.builtin.command: chcon -R -t named_zone_t /etc/named
+```
